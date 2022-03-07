@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>One Page Wonder - Start Bootstrap Template</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <img src="./assets/img/Logo Pastelería1.png" alt="Logo" width="100px" class="logo-principal">
+    <div class="container px-5">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="menu.html">Sabores y decoraciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">Crea tu pastel</a></li>
+                <li class="nav-item"><a class="nav-link" href="pastelero_info.html">Nuestros Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Acerca de nosotros</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <!-- Header-->
+  <header class="masthead1 text-center text-pink">
+    <div class="masthead-content-pedido">
+        <div class="pedido">
+            <h1 class="masthead-heading mb-0">Diseña tu pastel y recibelo en tu domicilio..</h1>
+            <h2 class="masthead-subheading mb-0">Sabores y diseños únicos, creados por ti mismo..</h2>
+            <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#formulario">Crea tu pastel aquí</a>
+        </div>
+    </div>
+  </header>
+  <section id="formulario">
+    <div class="titulo-pagina">
+      <h1>¡Crea el pastel a tu estilo!</h1><br>
+    </div>
+    <div class="formularioPedido">
+      <form action="hacerPedido.js">
+        <label for="Tipo-Pan" class="pregunta">¿De que tipo de pan quieres tu pastel?</label><br>
+        <select id="Tipo-Pan" name="Tipo-Pan" class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Pan seco</option>
+          <option value="2">Tres leches</option>
+          <option value="3">Sin gluten</option>
+          <option value="4">De mantequilla</option>
+        </select>
+        <hr>
+        <label for="sabor" class="pregunta">¿De que sabor(es) quieres tu pastel?</label><br>
+        <div>
+          <table class="table table-borderless">
+            <tr>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Chocolate" id="Chocolate" name="Chocolate">
+                <label class="form-check-label" for="Chocolate">Chocolate</label>
+              </th>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Vainilla" id="Vainilla" name="Vainilla">
+                <label class="form-check-label" for="Vainilla">Vainilla</label>
+              </th>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Fresa" id="Fresa" name="Fresa">
+                <label class="form-check-label" for="Fresa">Fresa</label>
+              </th>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Zarzamora" id="Zarzamora" name="Zarzamora">
+                <label class="form-check-label" for="Zarzamora">Zarzamora</label><br>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Cajeta" id="Cajeta" name="Cajeta">
+                <label class="form-check-label" for="Cajeta">Cajeta</label>
+              </th>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Zanahoria" id="Zanahoria" name="Zanahoria">
+                <label class="form-check-label" for="Zanahoria">Zanahoria</label>
+              </th>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Moka" id="Moka" name="Moka">
+                <label class="form-check-label" for="Moka">Moka</label>
+              </th>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Nuez" id="Nuez" name="Nuez">
+                <label class="form-check-label" for="Nuez">Nuez</label><br>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Nutella" id="Nutella" name="Nutella">
+                <label class="form-check-label" for="Nutella">Nutella</label>
+              </th>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Requesón" id="Requesón" name="Requesón">
+                <label class="form-check-label" for="Requesón">Requesón</label>
+              </th>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Café" id="Café" name="Café">
+                <label class="form-check-label" for="Café">Café</label>
+              </th>
+              <th>
+                <input class="form-check-input" type="checkbox" value="Durazno" id="Durazno" name="Durazno">
+                <label class="form-check-label" for="Durazno">Durazno</label>
+              </th>
+            </tr>
+          </table> 
+        </div><hr>
+        <label for="sabor" class="pregunta">¿Que adornos deseas incluir en el pastel?</label><br>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Figuras de novios</h5>
+                <p class="card-text">Este clásico no puede faltar para celebrar el día de tu boda.</p>
+                <img src="./assets/img/novios.jpg" class="imgAccesorio">
+                <input type="checkbox" value="Novios" name="Novios" id="Novios" style="left:25%; position: relative;">
+                <label for="Novios" style="left:25%; position: relative;">Figura de novios</label><br>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Letrero Feliz Cumpleaños</h5>
+                <p class="card-text">Letrero con la frase Feliz Cumple, ideal para cualquier cumpleaños.</p>
+                <img src="./assets/img/feliz-cumple.jpg" class="imgAccesorio" width="45%">
+                <input type="checkbox" value="felizCumple" name="felizCumple" id="felizCumple" style="left:20%; position: relative;">
+                <label for="felizCumple" style="left:20%; position: relative;">Letrero Feliz Cumple</label><br>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Velas</h5>
+                <p class="card-text">Este clásico no puede faltar para celebrar el día de tu boda.</p>
+                <img src="./assets/img/velas.jpg" class="imgAccesorio" height="259px">
+                <input type="checkbox" value="velas" name="velas" id="velas" style="left:5%; position: relative;">
+                <label for="velas" style="left:5%; position: relative;">Velas clásicas</label>
+                <input min="1" type="number" id="velasCuantas" name="velasCuantas" placeholder="¿Cuantas?" style="left:5%; position: relative;width: 40%;">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Velas Mágicas</h5>
+                <p class="card-text">Las velas mágicas daran un toque brillante y especial a tus eventos.</p>
+                <img src="./assets/img/velas magicas.jpg" class="imgAccesorio" height="259px">
+                <input type="checkbox" value="velasMagicas" name="velasMagicas" id="velasMagicas" style="left:5%; position: relative;">
+                <label for="velasMagicas" style="left:5%; position: relative;">Velas mágicas</label>
+                <input min="1" type="number" id="velasMagicasCuantas" name="velasMagicasCuantas" placeholder="¿Cuantas?" style="left:5%; position: relative;width: 40%;">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Velas númericas</h5>
+                <p class="card-text">Porque cada año cuenta, puedes seleccionar esta vela para indicar tu edad.</p>
+                <img src="./assets/img/velas numericas.jpg" class="imgAccesorio" height="278px">
+                <input type="checkbox" value="velasNumericas" name="velasNumericas" id="velasNumericas" style="left:25%; position: relative;">
+                <label for="velasNumericas" style="left:25%; position: relative;">Velas Númericas</label><br>
+                <input min="1" type="number" id="velasNumericasCuantas" name="velasNumericasCuantas" placeholder="¿Cúal número?" style="left:25%; position: relative;width: 50%;">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Figuras personalizadas</h5>
+                <p class="card-text">Sí deseas incluir algunos articulos de algún tema en especial, puedes dejarnos en la seccion de comentarios, junto con tus datos y te contactaremos.</p>
+                <img src="./assets/img/personalizado.jpg" class="imgAccesorio" height="259px">
+                <input type="checkbox" value="personalizado" name="personalizado" id="personalizado" style="left:20%; position: relative;">
+                <label for="personalizado" style="left:20%; position: relative;">Diseño Personalizado</label><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <label for="sabor" class="pregunta">Tus datos de contacto</label><br>
+        <div class="input-group">
+          <span class="input-group-text">Nombre y apellidos</span>
+          <input type="text" aria-label="Nombre" class="form-control" placeholder="Nombre(s)">
+          <input type="text" aria-label="apellidoPaterno" class="form-control" placeholder="Apellido paterno">
+          <input type="text" aria-label="apellidoMaterno" class="form-control" placeholder="Apellido materno">
+        </div><br>
+        <div class="input-group">  
+          <span class="input-group-text">Teléfono</span>
+          <input type="number"aria-label="Numero" class="form-control" placeholder="10 dígitos" maxlength="10" style="-webkit-appearance:none;">
+        </div><br>
+        <div class="input-group">
+          <span class="input-group-text">Correo electronico</span>
+          <input type="email" aria-label="email" class="form-control" placeholder="ejemplo@ejemplo.com">
+        </div><br>
+        <div class="input-group">
+          <span class="input-group-text">Dirección de envío</span>
+          <input type="text" aria-label="direccion" class="form-control" placeholder="Ingresa tu dirección de envío">
+        </div><br>
+        <div class="input-group">
+          <span class="input-group-text">Comentarios</span>
+          <textarea class="form-control" aria-label="With textarea" placeholder="Agrega tus comentarios sobre el pedido"></textarea>
+        </div><br>
+        <input type="submit" placeholder="Realizar pago" value="Confirmar y pagar" class="btn btn-success" style="left: 25%; position: relative;">
+        <input type="reset" placeholder="Cancelar y limpiar pedido" value="Cancelar y limpiar pedido" class="btn btn-danger" style="left: 25%; position: relative;">
+
+
+      </form>
+    </div>
+    
+  </section>
+
+    
+</body>
+<footer>© 2022 Orlando Jiménez</footer>
+</html>

@@ -1,0 +1,56 @@
+body{
+    background: linear-gradient(#e483d4,#f543ec,#c901c9);
+    background-repeat: no-repeat;
+    max-height: max-content;
+    font-family: "comic sans ms";
+    opacity: 50;
+    margin: 10px;
+}
+.logo{
+    float: right;
+    position: relative;
+}
+
+.menu-bar{
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    /*background-color: darksalmon;*/
+}
+.nav nav-pills{
+    align-items: center;
+    text-align: center;
+}
+
+.nav-item{
+    /*padding-top: 40px;*/
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #92007f;
+    font-size: 20px;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #460353;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+footer{
+    color: aliceblue;
+}
+
+.titulo{
+    font-weight: bolder;
+}
+.descripcionSabor{
+    text-align: justify;
+}
+
